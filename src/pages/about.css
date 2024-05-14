@@ -49,6 +49,19 @@ header #branding h1 {
 header nav {
     float: right;
 }
+.about{
+    padding: 10%;
+}
+h2{
+    font-family: 'Gelasio';
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    font-family: 'Gelasio';
+    font-size: 30px;
+    text-align: center;
+}
 
 footer{
     background: #50b3a2;
