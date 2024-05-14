@@ -1,0 +1,102 @@
+body {
+    background: #ffffff;
+    color: #000000;
+     font-family: 'Gelasio';
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #50b3a2;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gelasio';
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header li:hover{
+    cursor: pointer;
+    background-color:  #e8491d;
+    color: #f5f4f4;
+}
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+}
+
+footer{
+    background: #50b3a2;
+    height: auto;
+    font-family: 'Gelasio';
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}
+.footerContent .sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.sociais li{
+    margin: 0 10px;
+}
+
+.sociais a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sociais a i {
+    font-size: 1.1rem;
+}
+
+.sociais a:hover i{
+    color: #e8491d;
+    transition: color .4s ease;
+}
+.footerBottom{
+    background-color:  #e8491d;;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerBottom{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
