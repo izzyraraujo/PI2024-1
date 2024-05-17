@@ -17,6 +17,22 @@
         padding: 10px;
     }
 
+    .cadastro {
+       
+        background-color: #f5f4f4;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .formulario h4{
+        font-family: 'Gelasio';
+        font-size: 20px;
+        color: #e8491d;
+        text-align: center;
+    }
+
     .footerContent {
         display: flex;
         align-items: center;

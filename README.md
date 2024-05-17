@@ -12,7 +12,7 @@ Entre na pasta do projeto:
 
 ```cd PI2024-1```
 
-Abra o arquivo `index.html`
+Abra o arquivo `index.html` na pasta src/pages
 
 
 
