@@ -1,6 +1,4 @@
 body {
-    background: #ffffff;
-    color: #000000;
      font-family: 'Gelasio';
 }
 .container {
@@ -33,11 +31,13 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
 }
-header li:hover{
+header li:hover {
     cursor: pointer;
-    background-color:  #e8491d;
+    background-color: #e8491d;
     color: #f5f4f4;
+    border-radius: 20px;
 }
+
 header #branding {
     float: left;
 }
@@ -54,8 +54,9 @@ header nav {
 }
 h2{
     font-family: 'Gelasio';
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    color: #2f6960;
 }
 p{
     font-family: 'Gelasio';

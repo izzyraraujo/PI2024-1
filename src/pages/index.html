@@ -11,33 +11,122 @@
 
 <body>
     <header>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">acessibility</span></h1>
+                <h1><span class="highlight">Acessibility</span></h1>
             </div>
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="about.html">Sobre</a></li>
-                    <li><a href="services.html">Serviços</a></li>
                     <li><a href="contact.html">Contato</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+    <main>
+        <div class="menuUsuario">
+            <div class="logo">
+                <img src="../../public/assets/images/Logo-vertical.png" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Nome do produto...">
+                <button type="submit">
+                    Pesquisar
+                </button>
+            </div>
+            <div class="conta">
+                <button>
+                    <a class="linkLogin" href="login.html">Entrar/Criar Conta</a>
+                </button>
+            </div>
+            <div class="carrinho">
+                <button><i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-    <div class="container">
-        <!-- Conteúdo do site aqui -->
-    </div>
+
+        </div>
+        <!-- Conteúdo do site -->
+        <h1>Bem-vindo a Acessibility Aparelhos Auditivos</h1>
+        <p>Nosso foco é trazer os melhores produtos pelo menor preço, confira os produtos a venda!</p>
+
+        <div class="produtos">
+            <div id="products" class="product-list">
+            </div>
+        </div>
+
+        <script>
+            const products = [
+                { name: "Aparelho auditivo Phonak Rosa (kids)", price: "R$ 4800,00", image: "PhonakRosa.png" },
+                { name: "Aparelho auditivo Phonak Azul (kids)", price: "R$ 6200,00", image: "PhonakAzul.png" },
+                { name: "Aparelho auditivo Phonak Laranja (kids)", price: "R$ 4800,00", image: "PhonakLaranja.png" },
+                { name: "Aparelho auditivo Oticon Opn (Preto)", price: "R$ 9300,00", image: "Oticon.png" },
+                { name: "Aparelho auditivo Oticon Opn (Branco)", price: "R$ 6900,00", image: "Oticon (2).png" },
+                { name: "Aparelho auditivo Widex Evoke Vermelho", price: "R$ 5700,00", image: "Widex.png" },
+                { name: "Aparelho auditivo Widex Evoke Preto", price: "R$ 5700,00", image: "Widex (2).png" },
+                { name: "Aparelho auditivo Widex Evoke Branco", price: "R$ 5700,00", image: "Widex (3).png" },
+                { name: "Amplificador de Som TV/PC/RADIO BS28B", price: "R$ 294,90", image: "Amplificador de Som 2.png" },
+                { name: "Telefone com amplificador de som Intelbras", price: "R$ 149,90", image: "Telefone amplificador Intelbras.png" },
+                { name: "Relogio alarme vibratório Relogio 1", price: "R$ 145,90", image: "Despertador Vibratorio 1.png" },
+                { name: "Relogio alarme vibratório Relogio 2", price: "R$ 129,90", image: "Despertador Vibratorio 2 (2).png" },
+                { name: "Controle grande para idosos", price: "R$ 29,90", image: "Controle grande para idosos.png" },
+                { name: "Pulseira cuidador idoso SOS alarme Pulseira SOS Tuya", price: "R$ 329,90", image: "Pulseira cuidador idoso SOS alarme.png" },
+                { name: "Calçados antiderrapantes Tênis Mule Ortopédico com Amortecedor Antiderrapante", price: "R$ 119,90", image: "Calçados antiderrapantes 1 preto.png" },
+                { name: "Calçados antiderrapantes Calçado antiderrapante Soft works", price: "R$ 72,90", image: "Calçado antiderrapante Soft works Preto.png" },
+                { name: "Colchão anti escaras", price: "R$ 194,90", image: "Colchão anti escaras (4).png" },
+                { name: "Almofada ortopédica cx de ovo quadrada encosto -ar/água", price: "R$ 79,90", image: "Almofada ortopédica.png" },
+                { name: "Termômetro Infravermelho sem Contato Multilaser Saúde - HC260", price: "R$ 89,90", image: "Termômetro testa (2).png" },
+                { name: "Termômetro Multifunções Testa e Ouvido HC498 - MULTILASER", price: "R$ 99,90", image: "Termômetro auricular.png" },
+                { name: "Aparelho Medidor De Pressão Arterial Digital De Pulso - G Tech", price: "R$ 129,90", image: "Medidor de pressão.png" },
+                { name: "Bengala Ortopédica Dilepe Ajustável em Alumínio", price: "R$ 72,90", image: "Bengala Ortopédica Dilepe Ajustável em Alumínio.png" },
+                { name: "Bengala 4 Pontas Indaia em Alumínio", price: "R$ 109,90", image: "Testes2.png" },
+                { name: "Bengala Ortopédica Ortho Pauher Preta", price: "R$ 115,90", image: "Bengala Ortopédica Ortho Pauher Preta.png" },
+            ];
+
+            function filterProducts() {
+                const searchInput = document.getElementById('searchInput');
+                const searchText = searchInput.value.toLowerCase();
+                const productsContainer = document.getElementById('products');
+                productsContainer.innerHTML = ''; // Limpa a lista de produtos
+
+                products.forEach(product => {
+                    if (product.name.toLowerCase().includes(searchText)) {
+                        const productItem = document.createElement('div');
+                        productItem.classList.add('product');
+                        productItem.innerHTML = `
+                            <div class="product-info">
+                                <h3>${product.name}</h3>
+                                
+                            </div>
+                            <div class="product-thumbnail">
+                                <img src="../../public/assets/images/${product.image}" alt="${product.name}">
+                                <p>Preço: ${product.price}</p>
+                                <button class="botaoComprar">Comprar</button>
+                                
+                             </div>
+                        `;
+                        productsContainer.appendChild(productItem);
+                    }
+                });
+            }
+
+            // Chamamos filterProducts() inicialmente para exibir todos os produtos
+            filterProducts();
+        </script>
+        </div>
+    </main>
+
+
 
 
 
@@ -65,7 +154,6 @@
                     <li>Termos e condições</li>
                     <li>Garantia de satisfação</li>
                 </ul>
-
             </div>
             <div class="sociais">
                 <ul>
@@ -77,7 +165,7 @@
 
         </div>
         <div class="footerBottom">
-            <p>copyright &copy;2024 acessibility aparelhos auditivos | Todos os direitos reservados.</p>
+            <p>copyright &copy;2024 acessibility aparelhos auditivos| Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>

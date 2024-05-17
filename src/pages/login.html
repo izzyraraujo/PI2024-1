@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/494b8f7526.js" crossorigin="anonymous"></script>
+    <title>E-commerce Acessível para Terceira Idade</title>
+</head>
+
+<body>
+    <header>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Acessibility</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="menuUsuario">
+            <div class="logo">
+                <img src="../../public/assets/images/Logo-vertical.png" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Nome do produto...">
+                <button type="submit">
+                    Pesquisar
+                </button>
+            </div>
+            <div class="conta">
+                <button>
+                    <a class="linkLogin" href="login.html">Entrar/Criar Conta</a>
+                </button>
+            </div>
+            <div class="carrinho">
+                <button><i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="cadastro">
+        <div class="login">
+            <h2>Login</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="senha">Senha</label>
+                <input type="password">
+                <input type="submit" value="Entrar">
+            </div>
+        <div class="criarConta">
+            <h2>Criar Conta</h2>
+                <label for="nomeCompleto">Nome Completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="senha">Senha</label>
+                <input type="password">
+                <input type="submit" value="Criar Conta">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContent">
+            <div class="atendimento">
+                <ul>
+                    <li>ATENDIMENTO AO CLIENTE</li>
+                    <li>
+                        Horário de atendimento: Seg. à Sáb. <b>8:00h</b> às <b>18:00h</b>
+                    </li>
+                    <li>
+                        Email: atendimento@acessibility.com
+                    </li>
+                    <li>
+                        Telefone: (12) 34567-8900
+                    </li>
+                </ul>
+            </div>
+            <div class="direitos">
+                <ul>
+                    <li>Política de troca e devolução</li>
+                    <li>Garantia e prazos</li>
+                    <li>Política de privacidade</li>
+                    <li>Termos e condições</li>
+                    <li>Garantia de satisfação</li>
+                </ul>
+            </div>
+            <div class="sociais">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            <p>copyright &copy;2024 acessibility aparelhos auditivos| Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

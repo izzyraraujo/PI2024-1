@@ -69,7 +69,6 @@ header #branding h1 {
 header nav {
     float: right;
 }
-
 .menuUsuario {
     display: flex;
     flex-direction: row;
@@ -175,85 +174,88 @@ header nav {
     background-color: #50b3a2;
     color: #f5f4f4;
 }
-main{
-    background-color: #e1f5f1;
-    padding-bottom: 10%;
-}
-main h1 {
-    font-family: 'Gelasio';
-    text-align: center;
-    font-size: 40px;
-    color: #18695c;
-}
-
-main p {
-    font-family: 'Gelasio';
-    text-align: center;
-    font-size: 20px;
-}
-
-.produtos {
+.cadastro {
+    background-color: #f5f4f4;
+    color: #000000;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: auto;
-    margin-left: 10%;
 }
-
-/* Estilos para a lista de produtos */
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product {
-    width: calc(20% - 20px);
-    /* Define a largura de cada produto */
-    margin: 10px;
-    border: 3px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 20px;
+.login{
+    margin: 5px;
+    border: 3px solid hsl(170, 46%, 90%);
+    background-color: #d9f1ed;
+    border-radius: 10px;
     padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
 }
-
-/* Estilos para as miniaturas dos produtos */
-.product-thumbnail img {
-    width: 100%;
-    /* Define a largura da miniatura */
-    height: auto;
-    /* Define a altura da miniatura */
-    text-align: center;
-    /* Alinhar conteúdo ao centro */
-}
-
-.botaoComprar {
-    width: 90%;
-    align-items:end;
-    padding: 5px 10px;
-    margin-right: 5px;
+.login [type="submit"]{
+    height: 50px;
+    width: 50%;
     background-color: #50b3a2;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: 'Gelasio';
     color: #ffffff;
+    font-weight: bold;
 }
-.botaoComprar:hover {
-    width: 100%;
+
+.login [type="submit"]:hover{
     cursor: pointer;
-    background-color: #e8491d;
+    background-color:  #e8491d;
     color: #f5f4f4;
 }
-/* Estilos para a informação do produto */
-.product-info {
-    flex-grow: 1;
-    /* Permite que a informação do produto ocupe o espaço restante */
-    text-align: center;
-    font-family: 'Gelasio';
-    font-size: 17px;
+
+.criarConta{
+    margin: 10px;
+    border: 3px solid #d9f1ed;
+    background-color: #d9f1ed;
+    border-radius: 10px;
+    padding: 10px;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.criarConta [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #50b3a2;
+    color: #ffffff;
+    font-weight: bold;
 }
 
+.criarConta [type="submit"]:hover{
+    cursor: pointer;
+    background-color:  #e8491d;
+    color: #f5f4f4;
+}
+label{
+    font-family: 'Gelasio';
+    font-size: 20px;
+    color: #000000;
+}
+
+input, textarea{
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 1px solid #50b3a2;
+    padding: 8px;
+    font-size: 15px;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Gelasio';
+    text-align: center;
+    justify-content: center;
+    color: #50b3a2;
+}
 footer {
     background: #50b3a2;
     height: auto;

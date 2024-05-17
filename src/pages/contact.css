@@ -1,6 +1,4 @@
 body {
-    background: #ffffff;
-    color: #000000;
      font-family: 'Gelasio';
 }
 .container {
@@ -33,11 +31,13 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
 }
-header li:hover{
+header li:hover {
     cursor: pointer;
-    background-color:  #e8491d;
+    background-color: #e8491d;
     color: #f5f4f4;
+    border-radius: 20px;
 }
+
 header #branding {
     float: left;
 }
@@ -71,7 +71,7 @@ form [type="submit"]{
     height: 50px;
     width: 50%;
     background-color: #50b3a2;
-    color: #36312c;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -97,15 +97,15 @@ input, textarea{
     font-size: 15px;
 }
 .formulario h3{
-    font-size: 25px;
+    font-size: 40px;
     font-family: 'Gelasio';
     text-align: center;
     color: #000000;
 }
 .formulario h4{
     font-family: 'Gelasio';
-    font-size: 20px;
-    color: #50b3a2;
+    font-size: 30px;
+    color: #e8491d;
     text-align: center;
 }
 .formulario h5{
