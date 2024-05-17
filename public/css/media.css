@@ -1,2 +1,26 @@
 @media screen and (max-width: 768px) {
+    .menuUsuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+        background-color: #bcd8d3;
+    }
+
+    .product {
+        width: calc(40% - 20px);
+        /* Define a largura de cada produto */
+        margin: 10px;
+        border: 3px solid #ffffff;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .footerContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
