@@ -10,9 +10,9 @@ Clone o repositório:
 
 Entre na pasta do projeto:
 
-```cd PI2024-1```
+```cd PI2024-1/src/pages```
 
-Abra o arquivo `index.html` na pasta src/pages
+Abra o arquivo `index.html`
 
 
 
