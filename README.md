@@ -2,6 +2,10 @@
 
 Desenvolvimento de um sit de e-commerce para a Empresa Acessibility Aparelhos Auditivos Ltda
 
+## Acessar o site:
+
+[Clique aqui](https://izzyraraujo.github.io/PI2024-1/)
+
 ## Instalação:
 
 Clone o repositório:
